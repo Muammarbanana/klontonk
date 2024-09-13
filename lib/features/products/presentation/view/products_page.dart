@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
@@ -24,6 +26,8 @@ class _ProductsPageState extends State<ProductsPage> {
   String? _searchKeyword;
   int _nextPage = 1;
 
+  Timer? _debounce;
+
   @override
   void initState() {
     _pagingController.addPageRequestListener(
@@ -40,6 +44,14 @@ class _ProductsPageState extends State<ProductsPage> {
       },
     );
     super.initState();
+  }
+
+  void _onSearchChanged(String query) {
+    if (_debounce?.isActive ?? false) _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 500), () {
+      _searchKeyword = query;
+      _pagingController.refresh();
+    });
   }
 
   @override
@@ -65,6 +77,7 @@ class _ProductsPageState extends State<ProductsPage> {
               decoration: InputDecoration(
                 hintText: l10n.productsSearchHint,
               ),
+              onChanged: _onSearchChanged,
             ),
             const SizedBox(height: 16),
             const ProductTableHeader(),
