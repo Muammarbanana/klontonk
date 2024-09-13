@@ -125,6 +125,20 @@ class _ProductsPageState extends State<ProductsPage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute<dynamic>(
+              builder: (context) => const CreateProductPage(),
+            ),
+          ).then((value) {
+            _nextPage = 1;
+            _pagingController.refresh();
+          });
+        },
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }

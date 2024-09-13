@@ -3,26 +3,26 @@ import 'dart:convert';
 class ParamsCreateProduct {
   const ParamsCreateProduct({
     required this.categoryName,
-    required this.sku,
     required this.name,
-    required this.description,
-    required this.weight,
-    required this.width,
-    required this.length,
-    required this.height,
-    required this.image,
     required this.price,
+    this.sku,
+    this.description,
+    this.weight,
+    this.width,
+    this.length,
+    this.height,
+    this.image,
   });
 
   final String categoryName;
-  final String sku;
+  final String? sku;
   final String name;
-  final String description;
-  final int weight;
-  final int width;
-  final int length;
-  final int height;
-  final String image;
+  final String? description;
+  final int? weight;
+  final int? width;
+  final int? length;
+  final int? height;
+  final String? image;
   final int price;
 
   String toJson() => jsonEncode(toMap());
@@ -37,6 +37,6 @@ class ParamsCreateProduct {
         'length': length,
         'height': height,
         'image': image,
-        'price': price,
+        'harga': price,
       };
 }

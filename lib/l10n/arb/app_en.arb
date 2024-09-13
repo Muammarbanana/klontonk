@@ -9,6 +9,7 @@
   "productsAddProductButton": "Add Product",
   "productsAppBarTitle": "Product List",
   "productsEmptyContent": "No Data Found",
+  "productsRequiredField": "Field required",
   "productsSearchHint": "Search product",
   "productsTableHeaderCategory": "Category",
   "productsTableHeaderName": "Name",

@@ -9,6 +9,7 @@
   "productsAddProductButton": "Tambah Produk",
   "productsAppBarTitle": "Daftar Produk",
   "productsEmptyContent": "Tidak Ada Data",
+  "productsRequiredField": "Wajib diisi",
   "productsSearchHint": "Cari produk",
   "productsTableHeaderCategory": "Kategori",
   "productsTableHeaderName": "Nama",

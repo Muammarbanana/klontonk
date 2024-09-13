@@ -33,6 +33,19 @@ class CustomTheme {
           backgroundColor: Colors.lightBlue,
         ),
       ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        elevation: 0,
+        extendedPadding: const EdgeInsets.all(15),
+        foregroundColor: Colors.white,
+        extendedTextStyle: GoogleFonts.urbanist(
+          textStyle: const TextStyle(
+            fontSize: 16,
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: Colors.lightBlue,
+      ),
       inputDecorationTheme: InputDecorationTheme(
         border: const OutlineInputBorder(
           borderSide: BorderSide(
