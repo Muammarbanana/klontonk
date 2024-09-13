@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:klontonk/core/core.dart';
 import 'package:klontonk/features/features.dart';
 
 import 'package:klontonk/l10n/l10n.dart';
@@ -9,12 +10,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        ),
-        useMaterial3: true,
-      ),
+      theme: CustomTheme.lightTheme,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: const ProductsPage(),
