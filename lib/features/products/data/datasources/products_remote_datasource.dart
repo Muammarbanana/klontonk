@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:klontonk/core/core.dart';
 import 'package:klontonk/features/features.dart';
 
@@ -24,7 +25,7 @@ class ProductsRemoteDatasourceImpl
   ) async {
     try {
       final response = await dio.post(
-        '/products',
+        '${dotenv.env['BASE_URL']}/products',
         data: params.toMap(),
       );
       return Success<ProductResponse, Exception>(
@@ -41,7 +42,7 @@ class ProductsRemoteDatasourceImpl
   ) async {
     try {
       final response = await dio.get(
-        '/products',
+        '${dotenv.env['BASE_URL']}/products',
         queryParameters: params.toMap(),
       );
       final dataList = <ProductResponse>[];

@@ -50,7 +50,7 @@ class ProductsPage extends StatelessWidget {
             Expanded(
               child:
                   ListView.builder(itemBuilder: (_, __) => const Text('test')),
-            )
+            ),
           ],
         ),
       ),
