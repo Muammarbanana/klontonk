@@ -1,7 +1,11 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "productsAppBarTitle": "Product List",
+    "@productsAppBarTitle": {
+        "description": "Text shown in the AppBar of the Products Page"
+    },
+    "productsSearchHint": "Search product",
+    "@productsSearchHint": {
+        "description": "Text shown in the search bar of the Products Page"
     }
 }

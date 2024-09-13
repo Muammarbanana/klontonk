@@ -33,24 +33,43 @@ class CustomTheme {
           backgroundColor: Colors.lightBlue,
         ),
       ),
-      inputDecorationTheme: const InputDecorationTheme(
-        border: UnderlineInputBorder(
+      inputDecorationTheme: InputDecorationTheme(
+        border: const OutlineInputBorder(
           borderSide: BorderSide(
             color: Colors.lightBlue,
           ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(10),
+          ),
         ),
-        enabledBorder: UnderlineInputBorder(
+        enabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(
             color: Colors.lightBlue,
           ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(10),
+          ),
         ),
-        focusedBorder: UnderlineInputBorder(
+        focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(
             color: Colors.lightBlue,
           ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(10),
+          ),
         ),
-        labelStyle: TextStyle(color: Colors.white),
-        hintStyle: TextStyle(color: Colors.grey),
+        hintStyle: GoogleFonts.urbanist(
+          textStyle: const TextStyle(
+            fontSize: 16,
+            color: Colors.grey,
+          ),
+        ),
+        labelStyle: GoogleFonts.urbanist(
+          textStyle: const TextStyle(
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
       ),
       primaryColor: Colors.lightBlue,
       textTheme: TextTheme(
