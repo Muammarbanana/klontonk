@@ -119,7 +119,7 @@ class _CreateProductPageState extends State<CreateProductPage> {
                       );
                     },
                   ),
-                )
+                ),
               ],
             ),
           ),
