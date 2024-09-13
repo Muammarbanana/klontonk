@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-class ParamsCreateProducts {
-  const ParamsCreateProducts({
+class ParamsCreateProduct {
+  const ParamsCreateProduct({
     required this.categoryName,
     required this.sku,
     required this.name,

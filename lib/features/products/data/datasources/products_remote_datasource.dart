@@ -3,8 +3,9 @@ import 'package:klontonk/core/core.dart';
 import 'package:klontonk/features/features.dart';
 
 abstract class ProductsRemoteDatasource {
-  Future<Result<ProductResponse, Exception>> createProducts(
-      ParamsCreateProducts params);
+  Future<Result<ProductResponse, Exception>> createProduct(
+    ParamsCreateProduct params,
+  );
   Future<Result<List<ProductResponse>, Exception>> getProducts(
     ParamsGetProducts params,
   );
@@ -18,8 +19,8 @@ class ProductsRemoteDatasourceImpl
   final Dio dio;
 
   @override
-  Future<Result<ProductResponse, Exception>> createProducts(
-    ParamsCreateProducts params,
+  Future<Result<ProductResponse, Exception>> createProduct(
+    ParamsCreateProduct params,
   ) async {
     try {
       final response = await dio.post(
