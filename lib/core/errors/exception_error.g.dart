@@ -11,7 +11,7 @@ ServerFailure _$ServerFailureFromJson(Map<String, dynamic> json) =>
       traceId: json['traceId'] as String?,
       code: json['code'] as String?,
       message: json['message'] as String?,
-      payload: json['payload'] as String?,
+      payload: json['payload'] as String? ?? '',
     );
 
 Map<String, dynamic> _$ServerFailureToJson(ServerFailure instance) =>
