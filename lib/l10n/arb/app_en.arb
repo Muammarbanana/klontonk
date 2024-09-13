@@ -1,11 +1,16 @@
 {
-    "@@locale": "en",
-    "productsAppBarTitle": "Product List",
-    "@productsAppBarTitle": {
-        "description": "Text shown in the AppBar of the Products Page"
-    },
-    "productsSearchHint": "Search product",
-    "@productsSearchHint": {
-        "description": "Text shown in the search bar of the Products Page"
-    }
+  "@@locale": "en",
+  "@productsAppBarTitle": {
+    "description": "Text shown in the AppBar of the Products Page"
+  },
+  "@productsSearchHint": {
+    "description": "Text shown in the search bar of the Products Page"
+  },
+  "productsAddProductButton": "Add Product",
+  "productsAppBarTitle": "Product List",
+  "productsEmptyContent": "No Data Found",
+  "productsSearchHint": "Search product",
+  "productsTableHeaderCategory": "Category",
+  "productsTableHeaderName": "Name",
+  "productsTableHeaderPrice": "Price"
 }

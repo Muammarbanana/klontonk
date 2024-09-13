@@ -1,11 +1,16 @@
 {
-    "@@locale": "id",
-    "productsAppBarTitle": "Daftar Produk",
-    "@productsAppBarTitle": {
-        "description": "Teks yang ditampilkan di AppBar Halaman Produk"
-    },
-    "productsSearchHint": "Cari produk",
-    "@productsSearchHint": {
-        "description": "Teks yang ditampilkan di bilah pencarian Halaman Produk"
-    }
+  "@@locale": "id",
+  "@productsAppBarTitle": {
+    "description": "Teks yang ditampilkan di AppBar Halaman Produk"
+  },
+  "@productsSearchHint": {
+    "description": "Teks yang ditampilkan di bilah pencarian Halaman Produk"
+  },
+  "productsAddProductButton": "Tambah Produk",
+  "productsAppBarTitle": "Daftar Produk",
+  "productsEmptyContent": "Tidak Ada Data",
+  "productsSearchHint": "Cari produk",
+  "productsTableHeaderCategory": "Kategori",
+  "productsTableHeaderName": "Nama",
+  "productsTableHeaderPrice": "Harga"
 }

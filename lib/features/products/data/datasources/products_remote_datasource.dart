@@ -46,8 +46,8 @@ class ProductsRemoteDatasourceImpl
         queryParameters: params.toMap(),
       );
       final dataList = <ProductResponse>[];
-      for (final json in response.data as List<Map<String, dynamic>>) {
-        dataList.add(ProductResponse.fromJson(json));
+      for (final json in response.data as List<dynamic>) {
+        dataList.add(ProductResponse.fromJson(json as Map<String, dynamic>));
       }
 
       return Success<List<ProductResponse>, Exception>(dataList);

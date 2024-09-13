@@ -6,9 +6,10 @@ import 'package:klontonk/features/features.dart';
 final di = GetIt.instance;
 
 void init() {
-  // Remote Datasources
   di
-    ..registerLazySingleton(
+
+    // Remote Datasources
+    ..registerLazySingleton<ProductsRemoteDatasource>(
       () => ProductsRemoteDatasourceImpl(
         dio: di(),
       ),
